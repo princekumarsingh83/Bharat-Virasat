@@ -1,0 +1,64 @@
+
+.heritage-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heritage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.heritage-image {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.heritage-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heritage-content {
+  padding: 22px;
+}
+
+.heritage-category {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d97706;
+  text-transform: uppercase;
+}
+
+.heritage-content h3 {
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.heritage-content p {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.discover-link {
+  color: #d97706;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.discover-link:hover {
+  text-decoration: underline;
+}
+.discover-link:focus-visible {
+  outline: 3px solid #d97706;
+  outline-offset: 3px;
+  border-radius: 3px;
+}

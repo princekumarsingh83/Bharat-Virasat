@@ -1,0 +1,347 @@
+.culture-map-page {
+  min-height: 100vh;
+  background: #faf8f4;
+}
+
+/* Header */
+
+.map-header {
+  text-align: center;
+  padding: 80px 20px 45px;
+}
+
+.map-header h1 {
+  font-size: 52px;
+  margin: 15px 0;
+}
+
+.map-header h1 span {
+  color: #d97706;
+}
+
+.map-header > p:last-child {
+  max-width: 650px;
+  margin: auto;
+  color: #666666;
+  line-height: 1.7;
+}
+
+/* Map */
+
+.map-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 8% 35px;
+}
+
+.map-filters button {
+  padding: 10px 18px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.map-filters button:hover,
+.map-filters button.active {
+  background: #d97706;
+  color: #ffffff;
+  border-color: #d97706;
+}
+
+.map-results {
+  text-align: center;
+  padding: 25px 20px 70px;
+  color: #666666;
+}
+
+.map-results strong {
+  color: #d97706;
+}
+
+.map-section {
+  padding: 0 8% 90px;
+}
+
+.india-map {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+}
+
+/* Popup */
+
+.map-popup h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.map-popup p {
+  margin-bottom: 8px;
+  color: #666666;
+  font-size: 13px;
+}
+
+.map-popup span {
+  color: #d97706;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+  .map-header h1 {
+    font-size: 40px;
+  }
+
+  .map-filters {
+    padding: 10px 6% 30px;
+  }
+
+  .map-section {
+    padding: 0 6% 60px;
+  }
+
+  .india-map {
+    height: 450px;
+  }
+}
+
+.map-details-link {
+  display: inline-block;
+  margin-top: 12px;
+
+  color: #d97706;
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.map-details-link:hover {
+  text-decoration: underline;
+}
+
+/* MAP POPUP */
+
+.popup-category {
+  display: inline-block;
+  color: #d97706;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.map-popup h3 {
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+.map-popup p {
+  margin-bottom: 8px;
+  color: #666666;
+  font-size: 13px;
+}
+
+.map-popup .popup-description {
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.map-details-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #d97706;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.map-details-link:hover {
+  text-decoration: underline;
+}
+
+
+/* HERITAGE LIST SECTION */
+
+.map-heritage-section {
+  padding: 30px 8% 90px;
+  background: #ffffff;
+}
+
+.map-list-heading {
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.map-list-heading h2 {
+  font-size: 38px;
+  margin: 15px 0 10px;
+}
+
+.map-list-heading h2 span {
+  color: #d97706;
+}
+
+.map-list-heading > p:last-child {
+  color: #666666;
+  line-height: 1.7;
+}
+
+
+/* CARDS */
+
+.map-heritage-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.map-heritage-card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.map-heritage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* CARD IMAGE */
+
+.map-card-image {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+}
+
+.map-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.map-heritage-card:hover .map-card-image img {
+  transform: scale(1.05);
+}
+
+
+/* CARD CONTENT */
+
+.map-card-content {
+  padding: 22px;
+}
+
+.map-card-category {
+  color: #d97706;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.map-card-content h3 {
+  font-size: 22px;
+  margin: 9px 0;
+}
+
+.map-card-location {
+  color: #666666;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.map-card-content > p:not(.map-card-location) {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.map-card-link {
+  color: #d97706;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.map-card-link:hover {
+  text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+  .map-heritage-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .map-header {
+    padding: 65px 6% 40px;
+  }
+
+  .map-header h1 {
+    font-size: 40px;
+  }
+
+  .map-filters {
+    padding: 10px 6% 30px;
+  }
+
+  .map-section {
+    padding: 0 6% 60px;
+  }
+
+  .india-map {
+    height: 450px;
+  }
+
+  .map-heritage-section {
+    padding: 30px 6% 60px;
+  }
+
+  .map-list-heading h2 {
+    font-size: 32px;
+  }
+
+  .map-heritage-list {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .map-header h1 {
+    font-size: 34px;
+  }
+
+  .india-map {
+    height: 400px;
+  }
+
+}

@@ -1,0 +1,53 @@
+.category-card {
+  display: block;
+
+  padding: 30px 25px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.category-icon {
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+
+.category-card h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  color: #666666;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.category-link {
+  color: #d97706;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category-card:focus-visible {
+  outline: 3px solid #d97706;
+  outline-offset: 4px;
+}
